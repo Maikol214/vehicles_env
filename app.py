@@ -26,6 +26,6 @@ if build_scatter:
     st.write('Relación entre el precio y el kilometraje del vehículo')
     fig_scatter = px.scatter(car_data, x='odometer', y='price',
                              title='Precio vs Odómetro',
-                             color='type',  # si existe la columna 'type'
+                             color='type',
                              hover_data=['model', 'model_year'])
     st.plotly_chart(fig_scatter, use_container_width=True)
